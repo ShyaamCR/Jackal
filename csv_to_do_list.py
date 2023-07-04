@@ -3,7 +3,7 @@ from validator_collection import validators,checkers
 import datetime
 
 def main():
-    v_Due = datetime.strptime(input("Due By: "),"%d-%b-%Y")
+    v_Due = datetime.datetime.strptime(input("Due By: "),"%d-%b-%Y")
     date_check(v_Due)
 
 #Variable declarition
