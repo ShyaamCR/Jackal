@@ -3,8 +3,8 @@ from validator_collection import validators,checkers
 import datetime
 
 def main():
-    
-    date_check(v_Due = input("Due By: "))
+    v_Due = input("Due By: ")
+    date_check(v_Due)
 
 #Variable declarition
 # v_Entry_Date = datetime.date.today().strftime("%d-%b-%Y")
@@ -18,7 +18,7 @@ def main():
 # header = ['S.No','Date','Task Description','Priority','Due Date','Status','%_completion','Due in Days']
 
 def date_check(date_value):
-    if checkers.is_date(date_value, minimum=datetime.date.today().strftime("%d-%b-%Y")):
+    if checkers.is_date(date_value):
         pass
     else:
         return print('please input the value in the DD-MMM-YYYY date format')
