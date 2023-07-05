@@ -9,7 +9,9 @@
 
 # print(x)
     
-
-print(3%5)    
+for i in range(1, 11):
+    if 4%i == 0:
+        continue
+print(i)
 
 
